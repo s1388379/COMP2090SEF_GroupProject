@@ -8,7 +8,7 @@ if __name__ == "__main__":
     
     # Set doctor
     doctor1 = Doctor("Doctor Li", "Cardiology")
-    doctor1.add_patient(patient1)  # Releted patients
+    doctor1.add_patient(patient1)  # Related patients
     print(doctor1)
     print(f"Doctor ID: {doctor1.doctor_id}")
     
@@ -25,4 +25,4 @@ if __name__ == "__main__":
     print(f"Patient: {patient1.name}, PID: {patient1.patient_id}")
     print(f"Doctor: {doctor1._name}, Responsible: {[p.patient_id for p in doctor1.responsible_patients]}")
     print(f"Appintment: {appt.date}, PID: {appt.patient_id}")
-    print(f"Urgent level: {urgent._triage_level.name}, Waiting limit: {urgent.get_wait_time_limit()} minutes")
+    print(f"Urgent level: {urgent.triage_level.name}, Waiting limit: {urgent.get_wait_time_limit()} minutes")
