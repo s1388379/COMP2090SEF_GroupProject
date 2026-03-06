@@ -23,6 +23,6 @@ if __name__ == "__main__":
     
 
     print(f"Patient: {patient1.name}, PID: {patient1.patient_id}")
-    print(f"Doctor: {doctor1._name}, Responsible: {[p.patient_id for p in doctor1.responsible_patients]}")
+    print(f"Doctor: {doctor1.name}, Responsible: {[p.patient_id for p in doctor1.responsible_patients]}")
     print(f"Appintment: {appt.date}, PID: {appt.patient_id}")
     print(f"Urgent level: {urgent.triage_level.name}, Waiting limit: {urgent.get_wait_time_limit()} minutes")
