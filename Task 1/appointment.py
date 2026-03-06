@@ -1,8 +1,6 @@
 from person import Patient, Doctor, TriageLevel
 
 
-
-
 class Appointment:
     def __init__(self, appointment_date, patient_id: str, doctor_id: str):
         self._date = appointment_date
@@ -14,8 +12,15 @@ class Appointment:
         return self._patient_id
 
     @property
+    def doctor_id(self):
+        return self._doctor_id
+
+    @property
     def date(self):
         return self._date
+
+    def __str__(self):
+        return f"Appointment on {self._date} (Patient: {self._patient_id}, Doctor: {self._doctor_id})"
 
 
 class UrgentCounter:
