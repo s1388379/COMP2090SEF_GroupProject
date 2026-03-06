@@ -13,6 +13,10 @@ class Appointment:
     def patient_id(self):
         return self._patient_id
 
+    @property
+    def date(self):
+        return self._date
+
 
 class UrgentCounter:
     def __init__(self, patient_id: str, triage_level: TriageLevel):
@@ -29,6 +33,10 @@ class UrgentCounter:
     @property
     def priority(self):
         return self._triage_level.value  # The smaller the number, the more urgent the situation
+
+    @property
+    def triage_level(self):
+        return self._triage_level
 
     def get_wait_time_limit(self):
         return self._wait_time_limit
