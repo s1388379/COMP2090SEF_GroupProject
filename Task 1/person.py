@@ -1,5 +1,5 @@
 from enum import Enum     #Detecting user input and convert to constant string
-from typing import List, TYPE_CHECKING
+from typing import List
 
 if TYPE_CHECKING:
     from person import Patient
@@ -70,8 +70,8 @@ class Doctor:
         return list(self._responsible_patients)  # return a copy
 
     def add_patient(self, patient: "Patient"):
-        if patient_id not in self._responsible_patients:
-            self._responsible_patients.append(patient_id)
+        if patient not in self._responsible_patients:
+            self._responsible_patients.append(patient)
 
     def __str__(self):
         return f"{self._doctor_id} - Dr. {self._name} ({self._specialist})"
