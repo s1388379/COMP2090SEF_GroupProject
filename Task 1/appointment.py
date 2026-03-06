@@ -1,4 +1,4 @@
-from person import Patient, Doctor, TriageLevel
+from person import TriageLevel
 
 
 class Appointment:
