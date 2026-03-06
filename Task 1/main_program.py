@@ -7,9 +7,11 @@ if __name__ == "__main__":
     print(patient1)
     
     # Set doctor
-    doctor1 = Doctor("Doctor Li", "Cardiology", "D001")
-    doctor1.add_patient("P001")  # Releted patients
-
+    doctor1 = Doctor("Doctor Li", "Cardiology")
+    doctor1.add_patient(patient1.patient_id)  # Releted patients
+    print(doctor1)
+    print(f"Doctor ID: {doctor1.doctor_id}")
+    
     # Have appointment
     appt = Appointment((2026, 3, 10), "P001", "D001")
 
