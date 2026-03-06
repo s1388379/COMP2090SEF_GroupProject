@@ -4,7 +4,8 @@ from appointment import Appointment, UrgentCounter
 
 if __name__ == "__main__":
     patient1 = Patient("ZhangWei", "A123456(0)", 25, Gender.MALE, "P001")
-
+    print(patient1)
+    
     # Set doctor
     doctor1 = Doctor("Doctor Li", "Cardiology", "D001")
     doctor1.add_patient("P001")  # Releted patients
