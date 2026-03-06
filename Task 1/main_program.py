@@ -8,19 +8,21 @@ if __name__ == "__main__":
     
     # Set doctor
     doctor1 = Doctor("Doctor Li", "Cardiology")
-    doctor1.add_patient(patient1.patient_id)  # Releted patients
+    doctor1.add_patient(patient1)  # Releted patients
     print(doctor1)
     print(f"Doctor ID: {doctor1.doctor_id}")
     
     # Have appointment
-    appt = Appointment((2026, 3, 10), "P001", "D001")
-
+    appt = Appointment((2026, 3, 10), patient1.patient_id, doctor1.doctor_id)
+    
     # Emergency diversion
     urgent = UrgentCounter(patient1.patient_id, TriageLevel.EMERGENCY)
+    
+    print(appt)
     print(urgent.describe())
     
 
     print(f"Patient: {patient1.name}, PID: {patient1.patient_id}")
-    print(f"Doctor: {doctor1._name}, Responsible: {doctor1._responsible_patients}")
-    print(f"Appintment: {appt._date}, PID: {appt.patient_id}")
+    print(f"Doctor: {doctor1._name}, Responsible: {[p.patient_id for p in doctor1.responsible_patients]}")
+    print(f"Appintment: {appt.date}, PID: {appt.patient_id}")
     print(f"Urgent level: {urgent._triage_level.name}, Waiting limit: {urgent.get_wait_time_limit()} minutes")
