@@ -41,6 +41,10 @@ class Patient:
     def gender(self):
         return self._gender
 
+    @property
+    def hkid(self):
+        return self._hkid
+
     def __str__(self):
         return f"{self._patient_id} - {self._name} ({self._gender.value}, {self._age} yrs)"
 
