@@ -17,7 +17,6 @@ if __name__ == "__main__":
 
     # Emergency diversion
     urgent = UrgentCounter(patient1.patient_id, TriageLevel.EMERGENCY)
-
     print(urgent.describe())
     
 
