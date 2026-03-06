@@ -1,5 +1,8 @@
 from enum import Enum     #Detecting user input and convert to constant string
-from typing import List
+from typing import List, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from person import Patient
 
 
 class Gender(Enum):
@@ -33,18 +36,26 @@ class Patient:
     def name(self):
         return self._name
 
+    @property
+    def age(self):
+        return self._age
+
+    @property
+    def gender(self):
+        return self._gender
+
     def __str__(self):
         return f"{self._patient_id} - {self._name} ({self._gender.value}, {self._age} yrs)"
 
 class Doctor:
     NEXT_ID = 1 
     
-    def __init__(self, name: str, specialist: str）：
+    def __init__(self, name: str, specialist: str):
         self._name = name
         self._specialist = specialist
         self._doctor_id = f"D{Doctor.NEXT_ID:03d}"
         Doctor.NEXT_ID += 1
-        self._responsible_patients: List[str] = []
+        self._responsible_patients: List["Patient"] = []
 
     @property
     def doctor_id(self):
@@ -58,7 +69,7 @@ class Doctor:
     def responsible_patients(self):
         return list(self._responsible_patients)  # return a copy
 
-    def add_patient(self, patient_id: str):
+    def add_patient(self, patient: "Patient"):
         if patient_id not in self._responsible_patients:
             self._responsible_patients.append(patient_id)
 
