@@ -16,7 +16,10 @@ if __name__ == "__main__":
     appt = Appointment((2026, 3, 10), "P001", "D001")
 
     # Emergency diversion
-    urgent = UrgentCounter("P001", TriageLevel.EMERGENCY)
+    urgent = UrgentCounter(patient1.patient_id, TriageLevel.EMERGENCY)
+
+    print(urgent.describe())
+    
 
     print(f"Patient: {patient1.name}, PID: {patient1.patient_id}")
     print(f"Doctor: {doctor1._name}, Responsible: {doctor1._responsible_patients}")
