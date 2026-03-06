@@ -1,9 +1,6 @@
 from enum import Enum     #Detecting user input and convert to constant string
 from typing import List
 
-if TYPE_CHECKING:
-    from person import Patient
-
 
 class Gender(Enum):
     MALE = "M"
