@@ -3,7 +3,7 @@ from appointment import Appointment, UrgentCounter
 
 
 if __name__ == "__main__":
-    patient1 = Patient("ZhangWei", "A123456(0)", 25, Gender.MALE, "P001")
+    patient1 = Patient("ZhangWei", "A123456(0)", 25, Gender.MALE)
     print(patient1)
     
     # Set doctor
