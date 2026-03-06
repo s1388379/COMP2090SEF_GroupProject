@@ -40,3 +40,14 @@ class UrgentCounter:
 
     def get_wait_time_limit(self):
         return self._wait_time_limit
+
+    def describe(self):
+        level_desc = {
+            TriageLevel.CRITICAL: "Triage I (Critical): Immediate treatment.",
+            TriageLevel.EMERGENCY: "Triage II (Emergency): Within 15 minutes.",
+            TriageLevel.URGENT: "Triage III (Urgent): Within 30 minutes.",
+            TriageLevel.SEMI_URGENT: "Triage IV (Semi-urgent): Lower priority.",
+            TriageLevel.NON_URGENT: "Triage V (Non-urgent): Lowest priority."
+        }[self._triage_level]
+        
+        return f"{level_desc} Maximum waiting time: {self._wait_time_limit} minutes."
