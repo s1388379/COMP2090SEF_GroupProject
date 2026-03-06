@@ -42,6 +42,14 @@ class Doctor:
     def doctor_id(self):
         return self._doctor_id
 
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def responsible_patients(self):
+        return list(self._responsible_patients)  # return a copy
+
     def add_patient(self, patient_id: str):
         if patient_id not in self._responsible_patients:
             self._responsible_patients.append(patient_id)
