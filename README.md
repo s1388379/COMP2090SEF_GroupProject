@@ -24,7 +24,7 @@ This is a simple OOP-based clinic management system that models basic entities i
 ### Main Python Files
 - [`main_program.py`](Task_1/main_program.py)
 - [`person.py`](task1/person.py)  
-- [`appointment.py`](task1/appointment.py)
+- [`appointment.py`](task1/appointment.py) 
 
 
 
