@@ -1,5 +1,5 @@
 from person import TriageLevel
- 
+
 
 class Appointment:
     def __init__(self, appointment_date, patient_id: str, doctor_id: str):
