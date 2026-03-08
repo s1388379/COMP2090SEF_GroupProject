@@ -15,10 +15,11 @@
 
 ### Overview
 This is a simple OOP-based clinic management system that models basic entities inside a hospital:
-- ***Patients*** (name, HKID, gender, age, auto-generated patient ID).
-- ***Doctors*** (name, specialty, auto-generated doctor ID, responsible patients).
-- ***Appointments*** (date, patient ID, doctor ID).
-- ***Triage and waiting time using the 5-level emergency triage system used in Hong Kong public hospitals***.
+
+- ***Patients***: name, HKID, gender, age, auto-generated patient ID
+- ***Doctors***: name, specialty, auto-generated doctor ID, responsible patients
+- ***Appointments***: date, patient ID, doctor ID
+- ***Triage***: a 5-level emergency triage system similar to that used in Hong Kong public hospitals, with different waiting times per urgency level
 
 
 ### Main Python Files
@@ -27,48 +28,61 @@ This is a simple OOP-based clinic management system that models basic entities i
 - [`appointment.py`](Task_1/appointment.py) 
 
 
-### OOP Concepts Used (so far)
-- Classes and objects (`Patient`, `Doctor`, `Appointment`, `UrgentCounter`, enums). 
-- Encapsulation via private attributes and `@property`.
-- Class attributes (`Patient.NEXT_ID`, `Doctor.NEXT_ID`). 
-- Magic methods (`__init__`, `__str__`).
-- Multiple modules and imports (`main_program.py` imports `person` and `appointment`). 
+### OOP Concepts Used
+- Classes and objects (`Patient`, `Doctor`, `Appointment`, `UrgentCounter`, enums)
+- Encapsulation via private attributes and `@property` getters/setters
+- Class attributes (e.g. `Patient.NEXT_ID`, `Doctor.NEXT_ID`)
+- Magic methods (`__init__`, `__str__`)
+- Modular programming: multiple Python modules imported into `main_program.py` 
+
 
 ### How to Run Task 1 Demo
 ```bash
 cd Task_1
 python main_program.py
 ```
+
+
 ---
+
+
 ## Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
 
-## Description
-For Task 2, we are going to self-study Heaps and heapsort.
-A heap is a tree-based data structure that is most commonly used to organize priority queues for different data. There are 2 different types of Heaps. Min-Heap and Max-Heap. Fundamentally, both require a parent node to store the data's starting point. The difference is that the value of the child nodes should either consistently be larger (min-Heap) or smaller(Max-Heap)
-
-Heap sort is a comparison-based algorithm. A heap is used to sort different data arrays based on time complexity and additional space.
-
---- 
+### Description
+For Task 2, we are going to self-study the **heap** data structure and **heap sort** algorithm, which are not covered in the lecture materials in this course.
 
 
-## Overview
+### Concept Overview
+- A heap is a complete binary tree that can efficiently support priority queue operations. 
+- A **max-heap** stores the largest element at the root, where every parent node is greater than or equal to its children. 
+- A **min-heap** stores the smallest element at the root, where every parent node is less than or equal to its children.  
+- **Heap sort** first builds a heap from the input array, then repeatedly extracts the root to produce a sorted sequence in \(O(n \log n)\) time.  
 
-This folder contains the preliminary code for **Task 2** of our COMP2090SEF group project.  
-We study:
-
-- **Data structure**: Binary Heap  
-- **Algorithm**: Heap Sort  
-
-Our goal is to:
-
-- Implement a binary heap from scratch in Python.
-- Implement heap sort using the heap.
-- Analyze the time complexity of heap operations and heap sort.
-- Demonstrate usage with simple examples.
 
 ---
 
-## Files (Planned)
+
+### Overview (Task 2 Folder)
+
+This folder contains the preliminary code for **Task 2** of our COMP2090SEF group project.  
+
+
+We study:
+- **Data structure**: Max-Heap (binary heap)  
+- **Algorithm**: Heap Sort  
+
+
+Our goals are to:
+- Implement a max-heap from scratch in Python
+- Implement heap sort using the max-heap
+- Analyze the time complexity of heap operations and heap sort
+- Demonstrate usage with simple examples
+
+
+---
+
+
+## Files (Current / Planned)
 
 - `heap.py`  
   - Implements a binary heap as a Python class.  
