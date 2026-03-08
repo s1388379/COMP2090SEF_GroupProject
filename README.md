@@ -81,8 +81,6 @@ Our goal is to:
     - Show the order of elements when repeatedly popping from the heap.  
     - Call `heap_sort()` on example lists and print results.
 
-*(At pre-submission, some of these files may be placeholders and will be completed later.)*
-
 ---
 
 ## Time Complexity (To Be Discussed in Report)
