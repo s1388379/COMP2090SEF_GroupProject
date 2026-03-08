@@ -64,7 +64,7 @@ For Task 2, we are going to self-study the **heap** data structure and **heap so
 
 ### Overview (Task 2 Folder)
 
-This folder contains the preliminary code for **Task 2** of our COMP2090SEF group project.  
+This folder contains the preliminary code for **Task 2** of our project.  
 
 
 We study:
