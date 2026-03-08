@@ -12,17 +12,19 @@
 
 ## Task 1 - Clinic Management System (Preliminary)
 
+
 ### Overview
-
 This is a simple OOP-based clinic management system that models basic entities inside a hospital:
-
-- **Patient**: personal details such as name, HKID, age, gender, and an auto-generated patient ID.
-- **Doctor**: doctor name, specialty, an auto-generated doctor ID, and a list of responsible patients.
-- **Appointment**: appointment date, patient ID and doctor ID.
-- **UrgentCounter**: a record of the patient’s triage level and the maximum waiting time based on the 5-level emergency triage system used in Hong Kong public hospitals.
-
+- ***Patients*** (name, HKID, gender, age, auto-generated patient ID).
+- ***Doctors*** (name, specialty, auto-generated doctor ID, responsible patients).
+- ***Appointments*** (date, patient ID, doctor ID).
+- ***Triage and waiting time using the 5-level emergency triage system used in Hong Kong public hospitals***.
 
 
+### Main Python Files
+- [`main_program.py`](task1/main_program.py)  
+- [`person.py`](task1/person.py)  
+- [`appointment.py`](task1/appointment.py)
 
 
 
