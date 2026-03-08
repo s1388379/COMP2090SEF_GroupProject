@@ -1,14 +1,6 @@
 from heap import MaxHeap
 
 def heap_sort(arr):
-    """
-    Sort a list of numbers in descending order using MaxHeap.
-    For self-study: 
-    1. Build a heap from arr.
-    2. Repeatedly extract_max and collect results.
-    TODO: implement the full logic.
-    """
-    # TODO: implement
     pass
 
 
