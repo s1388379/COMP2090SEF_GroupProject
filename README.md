@@ -84,49 +84,58 @@ Our goals are to:
 
 ## Files (Current / Planned)
 
-- `heap.py`  
-  - Implements a binary heap as a Python class.  
-  - Planned operations:
-    - `insert(value)` – insert a new element into the heap.  
-    - `peek()` – return the root element (min or max depending on design).  
-    - `pop()` – remove and return the root element.  
-    - `heapify(iterable)` – build a heap from a list.
+- [heap.py](Task_2/heap.py)  
+  - Implements a ** MaxHeap** class using as a Python list as the underlying storage
+  - Methods:
+    - `insert(value)` – insert a new element into the heap and restore the max-heap property  
+    - `extract_max()` – remove and return the maximum (root) element
+    - `peek_max()` – return the current maximum element without removing it  
+    - `__len__()` – return the number of elements in the heap
+    - `is_empty()` – return `True` if the heap is empty  
 
-- `heap_sort.py`  
-  - Implements **heap sort** using the heap from `heap.py`.  
-  - Planned functions:
-    - `heap_sort(arr)` – returns a sorted version of `arr` using heap operations.
 
-- `test_main.py`  
-  - Simple test/demo script.  
-  - Will:
-    - Create a heap and insert several numbers.  
-    - Show the order of elements when repeatedly popping from the heap.  
-    - Call `heap_sort()` on example lists and print results.
+- [heap_sort.py](Task_2/heap_sort.py)
+  - Will implement **heap sort** using the `MaxHeap` class from `heap.py`
+  - Planned function:
+    - `heap_sort(arr)` – build a heap from `arr`, repeatedly call `extract_max()`, and return a sorted list
+
+
+- [test_main.py](Task_2/test_main.py)  (planned)
+  - Simple test/demo script that will:
+    - Create a `MaxHeap` and insert several numbers 
+    - Print the internal heap array and the current maximum 
+    - Call `heap_sort()` on example lists and print the results
+
 
 ---
 
-## Time Complexity (To Be Discussed in Report)
+
+## Time Complexity (To Be Discussed in the Report)
+
 
 We will discuss and verify in the Task 2 report:
 
-- Heap operations:
-  - `insert`: O(log n)  
-  - `pop` (remove root): O(log n)  
-  - `peek`: O(1)  
-  - `heapify` (build heap from n elements): O(n)
+
+- Max-heap operations:
+  - `insert`: \(O(\log n)\)  
+  - `extract_max`: \(O(\log n)\)  
+  - `peek_max`: \(O(1)\)
+
 
 - Heap sort:
-  - Overall time complexity: O(n log n)
+  - Building the heap from \(n\) elements: \(O(n)\)  
+  - Repeated extractions: \(O(n \log n)\)  
+  - Overall time complexity: \(O(n \log n)\)
 
+    
 ---
 
-## How to Run (Planned)
+## How to Run Task 2 (Preliminary)
 
 From the project root:
 
 ```bash
-cd Task
-python algorithm.py
-python datastructure.py
+cd Task_2
+python heap.py       # run the MaxHeap demo
+python heap_sort.py  # run the preliminary heap_sort demo
 ```
