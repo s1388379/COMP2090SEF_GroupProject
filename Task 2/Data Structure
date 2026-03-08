@@ -1,1 +1,70 @@
+class MaxHeap:
+    """
+    A simple max-heap implemented from scratch using a Python list.
+    """
+
+    def __init__(self):
+        # Underlying array to store heap elements
+        self.data = []
+
+    # ---------- index helper methods ----------
+
+    def _parent_index(self, i):
+        """Return the index of the parent of node i."""
+        return (i - 1) // 2
+
+    def _left_child_index(self, i):
+        """Return the index of the left child of node i."""
+        return 2 * i + 1
+
+    def _right_child_index(self, i):
+        """Return the index of the right child of node i."""
+        return 2 * i + 2
+
+    # ---------- core heap operations (to implement) ----------
+
+    def insert(self, value):
+        """
+        Insert a value into the heap and restore max-heap property.
+        TODO: append value, then percolate up.
+        """
+        # TODO: implement
+        pass
+
+    def extract_max(self):
+        """
+        Remove and return the maximum value from the heap.
+        TODO: swap root with last element, pop last, then percolate down.
+        """
+        # TODO: implement
+        pass
+
+    def peek_max(self):
+        """
+        Return the maximum value without removing it.
+        Return None if heap is empty.
+        """
+        if not self.data:
+            return None
+        return self.data[0]
+
+    # ---------- utility methods ----------
+
+    def __len__(self):
+        """Return number of elements in the heap."""
+        return len(self.data)
+
+    def is_empty(self):
+        """Return True if heap has no elements."""
+        return len(self.data) == 0
+
+
+if __name__ == "__main__":
+    # Simple preliminary test (can be wrong for now, just should not crash)
+    heap = MaxHeap()
+    heap.insert(10)
+    heap.insert(5)
+    heap.insert(20)
+    print("Current raw heap array:", heap.data)
+    print("Current max:", heap.peek_max())
 
