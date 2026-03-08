@@ -27,38 +27,19 @@ This is a simple OOP-based clinic management system that models basic entities i
 - [`appointment.py`](Task_1/appointment.py) 
 
 
+### OOP Concepts Used (so far)
+- Classes and objects (`Patient`, `Doctor`, `Appointment`, `UrgentCounter`, enums). 
+- Encapsulation via private attributes and `@property`.
+- Class attributes (`Patient.NEXT_ID`, `Doctor.NEXT_ID`). 
+- Magic methods (`__init__`, `__str__`).
+- Multiple modules and imports (`main_program.py` imports `person` and `appointment`). 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### How to Run Task 1 Demo
+```bash
+cd Task_1
+python main_program.py
+```
+---
 ## Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
 
 ## Overview
@@ -124,5 +105,7 @@ We will discuss and verify in the Task 2 report:
 From the project root:
 
 ```bash
-cd task2_heap
-python test_main.py
+cd Task
+python algorithm.py
+python datastructure.py
+```
