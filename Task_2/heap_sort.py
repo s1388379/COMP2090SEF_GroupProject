@@ -9,7 +9,3 @@ if __name__ == "__main__":
     print("Original data:", data)
     sorted_data = heap_sort(data)
     print("Sorted data (preliminary):", sorted_data) 
-
-
-
-
