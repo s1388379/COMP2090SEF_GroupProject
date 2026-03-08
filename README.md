@@ -14,7 +14,11 @@
 
 ### Overview
 
-This is a simple OOP-based clinic management system we created to help manage Patients, nurses and doctors inside a hospital. Seldom, in major emergency situations, triage can help patients based on the urgency of their injuries and process them through A&E more quickly. And can help different staff to check which doctor is responsible for which patient.
+This is a simple OOP-based clinic management system that models basic entities inside a hospital:
 
-This system currently has around 3 programs that focus on patients' personal details, doctors' information, and the storage of appointment data.
-For our system plans, we first input the patient's personal details and some of the symptoms they are experiencing into the person.py file. Then, based on the severity of the patient's illness, we triage them into different emergency levels. The same system used inside Hong Kong Public Hospitals. Then we will match certain specialist doctors to the patient. And mark the patient with the responsible doctors.
+- **Patient**: personal details such as name, HKID, age, gender, and an auto-generated patient ID.
+- **Doctor**: doctor name, specialty, an auto-generated doctor ID, and a list of responsible patients.
+- **Appointment**: appointment date, patient ID and doctor ID.
+- **UrgentCounter**: a record of the patient’s triage level and the maximum waiting time based on the 5-level emergency triage system used in Hong Kong public hospitals.
+
+
