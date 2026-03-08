@@ -3,7 +3,7 @@
 ## Group Information
 - Course: COMP2090SEF – Data Structures, Algorithms and Problem Solving
 - Semester: Spring 2026
-- Group: 65
+- Group number: 65
 - Members:
   - Tam Ares Ting Kwong (13883794)
   - Cheung Chak Wai Maxwell (13884490)
