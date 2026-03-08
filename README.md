@@ -57,7 +57,7 @@ This is a simple OOP-based clinic management system that models basic entities i
 
 
 
-# Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
+## Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
 
 ## Overview
 
