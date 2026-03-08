@@ -16,5 +16,5 @@ if __name__ == "__main__":
     data = [4, 1, 7, 3, 8, 5]
     print("Original data:", data)
     sorted_data = heap_sort(data)
-    print("Sorted data (preliminary):", sorted_data)
+    print("Sorted data (preliminary):", sorted_data) 
 
