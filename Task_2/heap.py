@@ -43,6 +43,3 @@ if __name__ == "__main__":
     heap.insert(20)
     print("Current raw heap array:", heap.data)
     print("Current max:", heap.peek_max())
-
- 
-
