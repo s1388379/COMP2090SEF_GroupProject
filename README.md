@@ -42,6 +42,15 @@ python main_program.py
 ---
 ## Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
 
+## Description
+For Task 2, we are going to self-study Heaps and heapsort.
+A heap is a tree-based data structure that is most commonly used to organize priority queues for different data. There are 2 different types of Heaps. Min-Heap and Max-Heap. Fundamentally, both require a parent node to store the data's starting point. The difference is that the value of the child nodes should either consistently be larger (min-Heap) or smaller(Max-Heap)
+
+Heap sort is a comparison-based algorithm. A heap is used to sort different data arrays based on time complexity and additional space.
+
+--- 
+
+
 ## Overview
 
 This folder contains the preliminary code for **Task 2** of our COMP2090SEF group project.  
