@@ -197,6 +197,6 @@ python test_main.py
 
 ---
 
-## Academic Honesty
+## 📌 Academic Honesty
 
 This project is developed by our group. External resources and AI tools (e.g., ChatGPT) were used for idea refinement, debugging, and report polishing. All code and concepts have been reviewed and understood by the group members in accordance with HKMU academic honesty policies.
