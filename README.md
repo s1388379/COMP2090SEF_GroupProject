@@ -125,6 +125,8 @@ A **heap** is a complete binary tree that satisfies the heap property:
 Heaps are commonly used to implement **priority queues**, where elements with higher priority are processed first.
 
 
+
+
 **🔹 Heap Sort**
 
 Heap sort works in two main steps:
