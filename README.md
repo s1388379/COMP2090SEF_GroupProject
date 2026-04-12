@@ -28,7 +28,7 @@ The system models the following entities:
 
 - **Patients**
   
--– Name, HKID, gender, age
+– Name, HKID, gender, age
   - Auto-generated patient ID  
 - **Doctors**
   
