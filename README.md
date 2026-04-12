@@ -1,10 +1,10 @@
 # COMP2090SEF Group Project – Clinic Management System & Heap + Heap Sort
 
-## Group Information
+## 📌 Group Information
 - **Course**: COMP2090SEF – Data Structures, Algorithms and Problem Solving
 - **Semester**: Spring 2026
 - **Group**: 65
-- **Members**:
+- **👥 Members**:
   - Tam Ares Ting Kwong (13883794)
   - Cheung Chak Wai Maxwell (13884490)
   - HAN Kongdongxu (13786160)
