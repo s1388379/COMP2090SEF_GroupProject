@@ -158,6 +158,7 @@ For example, the triage system can be improved by using a **priority queue (heap
       - Heap operations
       - Heap sort on different test cases
 
+---
 
 ## ⏱ Time Complexity
 
@@ -168,20 +169,31 @@ For example, the triage system can be improved by using a **priority queue (heap
 | Peek          | O(1)       |
 | Heap Sort     | O(n log n) |
 
-- **Heap sort**:
-  - In our implementation: building the heap by repeated `insert` is \(O(n \log n)\), and then we do \(n\) extractions at \(O(\log n)\) each, so overall **\(O(n \log n)\)**.
-  - In theory, using a bottom-up build-heap algorithm, building the heap can be done in \(O(n)\), but we use the simpler repeated-insert approach in this project.
+--- 
 
-### How to Run Task 2 Demo
-
-From the project root:
+### ▶️ How to Run Task 2 Demo
 
 ```bash
 cd Task_2
-python heap.py       # run MaxHeap demo
-python heap_sort.py  # run heap_sort demo
-python test_main.py  # run combined tests (if implemented)
+python test_main.py
 ```
+
+---
+
+## ⚠️ Limitations
+- The system is a simplified simulation and does not include:
+  - Database storage
+  - Graphical User Interface (GUI)
+- The triage system is currently rule-based and not dynamically optimised
+- The system is designed for demonstration rather than large-scale deployment
+
+---
+
+## 🚀 Future Improvements
+- Integrate heap-based priority queue into triage system
+- Add GUI for better user interaction
+- Implement persistent storage (file/database)
+- Expand system to include billing or medical records
 
 ---
 
