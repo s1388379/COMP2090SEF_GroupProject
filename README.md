@@ -91,7 +91,7 @@ cd Task_1
 python main_program.py
 ```
 
-This demon will:
+This demo will:
 
 - Create sample patients and doctors
 - Assign patients to doctor
@@ -122,21 +122,36 @@ A **heap** is a complete binary tree that satisfies the heap property:
 - **Max Heap**: Parent node ≥ children
 - **Min Heap**: Parent node ≤ children
 
-Heaps are commonly used to implement priority queues, where elements with higher priority are processed first.
-
+Heaps are commonly used to implement **priority queues**, where elements with higher priority are processed first.
 
 ---
 
+**🔹 Heap Sort**
+
+Heap sort works in two main steps:
+
+  1. Build a heap from input data
+  2. Repeatedly extract the root (maximum element)
+
+This produces a sorted sequence.
+
+---
+
+## 🔗 Connection to Task 1
+The heap data structure studied in Task 2 can be applied to the clinic system in Task 1.
+For example, the triage system can be improved by using a **priority queue (heap)** to automatically serve patients based on urgency level.
+
+---
+
+## ⚙️ Implemented Features
+
 ### Main Python Files
 
-- [`heap.py`](Task_2/heap.py)
-  - Implements a `MaxHeap` class using a Python list as the underlying storage.
-  - Key methods:
-    - `insert(value)` – insert a new element and restore the max-heap property
-    - `extract_max()` – remove and return the maximum (root) element
-    - `peek_max()` – return the current maximum without removing it
-    - `__len__()` – number of elements in the heap
-    - `is_empty()` – whether the heap is empty
+[`heap.py`](Task_2/heap.py)
+  - `insert(value)` – O(log n)
+  - `extract_max()` – O(log n)
+  - `peek_max()` – O(1)
+  - `is_empty()`
 
 - [`heap_sort.py`](Task_2/heap_sort.py)
   - Implements `heap_sort(arr)` using the `MaxHeap` class.
