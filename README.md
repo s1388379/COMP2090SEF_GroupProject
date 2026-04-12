@@ -27,20 +27,19 @@ This project simulates a simplified clinic management system using Object-Orient
 The system models the following entities:
 
 - **Patients**
-  
-– Name, HKID, gender, age
-  - Auto-generated patient ID  
+  – Name, HKID, gender, age
+  - Auto-generated patient ID
+    
 - **Doctors**
-  
   – Name, specialty
   - Auto-generated doctor ID
-  - Responsible patient list  
+  - Responsible patient list
+    
 - **Appointments**
-  
   – Appointment date
-  - Patient ID and Doctor ID  
+  - Patient ID and Doctor ID
+    
 - **Triage System (UrgentCounter)**
-  
   – 5-level classification:
     - Critical
     - Emergency
