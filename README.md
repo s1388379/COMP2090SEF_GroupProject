@@ -12,11 +12,19 @@
 
 ---
 
-## Task 1 – Clinic Management System
+## 🏥 Task 1 – Clinic Management System
 
-### Overview
+### 📖 Problem Background
 
-This is a simple OOP-based clinic management system that models basic entities in a hospital:
+In real-world clinics and hospitals, efficient management of patients, doctors, and appointments is essential to ensure timely treatment. In particular, triage systems are used to prioritise patients based on urgency to reduce waiting time and improve patient outcomes.
+
+This project simulates a simplified clinic management system using Object-Oriented Programming (OOP), focusing on modelling real-world entities and their relationships.
+
+---
+
+### 📖 System Overview
+
+The system models the following entities:
 
 - **Patients** – name, HKID, gender, age, auto-generated patient ID  
 - **Doctors** – name, specialty, auto-generated doctor ID, responsible patients  
