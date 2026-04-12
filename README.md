@@ -26,53 +26,85 @@ This project simulates a simplified clinic management system using Object-Orient
 
 The system models the following entities:
 
-- **Patients** – name, HKID, gender, age, auto-generated patient ID  
-- **Doctors** – name, specialty, auto-generated doctor ID, responsible patients  
-- **Appointments** – appointment date, patient ID, doctor ID  
-- **Triage** – a 5-level emergency triage system similar to that used in Hong Kong public hospitals, with different waiting time limits per urgency level  
+- **Patients**
+  – Name, HKID, gender, age
+  - Auto-generated patient ID  
+- **Doctors**
+  – Name, specialty
+  - Auto-generated doctor ID
+  - Responsible patient list  
+- **Appointments**
+  – Appointment date
+  - Patient ID and Doctor ID  
+- **Triage System (UrgentCounter)**
+  – 5-level classification:
+    - Critical
+    - Emergency
+    - Urgent
+    - Semi-urgent
+    - Non-urgent
+  - Each level has a predefined waiting time limit
 
 The current version focuses on demonstrating core OOP concepts (classes, encapsulation, class attributes, composition between objects, etc.) and basic simulation of patient–doctor–appointment relationships.
 
-### Main Python Files
+---
+
+### 📂 Main Python Files
 
 - [`main_program.py`](Task_1/main_program.py)
 - [`person.py`](Task_1/person.py)
 - [`appointment.py`](Task_1/appointment.py)
 
-### OOP Concepts Demonstrated
+---
 
-- **Classes and objects**: `Patient`, `Doctor`, `Appointment`, `UrgentCounter`, `Gender`, `TriageLevel`  
-- **Encapsulation**: private attributes with `@property` getters (and controlled mutation via methods such as `add_patient`)  
-- **Class attributes**: `Patient.NEXT_ID`, `Doctor.NEXT_ID` for auto-generated IDs  
-- **Magic methods**: `__init__`, `__str__` for object initialization and human-readable output  
-- **Composition and relationships**:
-  - `Doctor` keeps a list of responsible `Patient` objects
-  - `Appointment` and `UrgentCounter` refer to patient and doctor IDs
-- **Modular programming**: multiple Python modules (`person.py`, `appointment.py`) imported into `main_program.py`, with `if __name__ == "__main__":` as the entry point
+### 🧠 OOP Concepts Demonstrated
 
-### How to Run Task 1 Demo
+- **Encapsulation**
+  – Private attributes (`_name`, `_hkid`, etc.)
+  – Controlled access using @property
+- **Class and Object Design**
+  – Classes: `Patient`, `Doctor`, `Appointment`, `UrgentCounter`
+- **Class Attributes**
+  – Auto-increment IDs (`Patient.NEXT_ID`, `Doctor.NEXT_ID`)
+- **Abstraction**
+  – Use of `Enum` (`Gender`, `TriageLevel`) to model fixed categories
+- **Composition (Object Relationships)**
+  - A `Doctor` manages multiple `Patient` objects
+  - `Appointment` links patients and doctors via IDs
+- **Modular Programming**
+  - Code split into multiple modules:
+    - `person.py`
+    - `appointment.py`
+    - `main_program.py`
+- Special Methods
+  - `__init__`, `__str__` for initialization and output formatting
+
+---
+
+### ▶️ How to Run Task 1 Demo
 
 ```bash
 cd Task_1
 python main_program.py
 ```
 
-This will:
-- Create a demo patient and doctor
-- Link the patient to the doctor
-- Create an appointment
-- Assign a triage level and print the waiting time information
+This demon will:
+
+- Create sample patients and doctors
+- Assign patients to doctor
+- Create appointments
+- Demonstrate triage classification and waiting time
 
 ---
 
-## Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
+## 📊 Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
 
-### Overview
+### 📖 Overview
 
 For Task 2, we self-study:
 
-- **Data structure**: binary **max-heap** (priority queue)
-- **Algorithm**: **heap sort**, based on the max-heap
+- **Data structure**: Binary **Max-Heap**
+- **Algorithm**: **Heap Sort**
 
 We implement the max-heap from scratch using a Python list, then implement heap sort that builds a heap and repeatedly extracts the maximum to produce a sorted list.
 
