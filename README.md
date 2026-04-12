@@ -37,9 +37,9 @@ The system models the following entities:
     
 - **Appointments**
   - Appointment date
-  - Patient ID and Doctor ID  
+  - Patient ID and doctor ID  
     
-- **Triage System (UrgentCounter)**
+- **Triage System (`UrgentCounter`)**
   - 5-level classification:
     - Critical
     - Emergency
@@ -63,14 +63,14 @@ The current version focuses on demonstrating core OOP concepts (classes, encapsu
 ### 🧠 OOP Concepts Demonstrated
 
 - **Encapsulation**
-  – Private attributes (`_name`, `_hkid`, etc.)
-  – Controlled access using @property
+  - Private attributes (e.g. `_name`, `_hkid`, `_age`, `_gender`)
+  - Controlled access using `@property` getters (and methods such as `add_patient`)
 - **Class and Object Design**
-  – Classes: `Patient`, `Doctor`, `Appointment`, `UrgentCounter`
+  - Classes: `Patient`, `Doctor`, `Appointment`, `UrgentCounter`
 - **Class Attributes**
-  – Auto-increment IDs (`Patient.NEXT_ID`, `Doctor.NEXT_ID`)
+  - Auto-increment IDs: `Patient.NEXT_ID`, `Doctor.NEXT_ID`
 - **Abstraction**
-  – Use of `Enum` (`Gender`, `TriageLevel`) to model fixed categories
+  - Use of `Enum` (`Gender`, `TriageLevel`) to model fixed categories
 - **Composition (Object Relationships)**
   - A `Doctor` manages multiple `Patient` objects
   - `Appointment` links patients and doctors via IDs
@@ -79,8 +79,8 @@ The current version focuses on demonstrating core OOP concepts (classes, encapsu
     - `person.py`
     - `appointment.py`
     - `main_program.py`
-- Special Methods
-  - `__init__`, `__str__` for initialization and output formatting
+- **Special Methods**
+  - `__init__`, `__str__` for initialization and human-readable output
 
 ---
 
@@ -94,8 +94,8 @@ python main_program.py
 This demo will:
 
 - Create sample patients and doctors
-- Assign patients to doctor
-- Create appointments
+- Assign patients to a doctor
+- Create an appointment
 - Demonstrate triage classification and waiting time
 
 ---
@@ -106,8 +106,8 @@ This demo will:
 
 For Task 2, we self-study:
 
-- **Data structure**: Binary **Max-Heap**
-- **Algorithm**: **Heap Sort**
+- **Data structure**: binary **max-heap**
+- **Algorithm**: **heap sort**
 
 These topics are not covered in the course and are studied independently to extend our knowledge of data structures and algorithms.
 
@@ -119,24 +119,25 @@ These topics are not covered in the course and are studied independently to exte
 
 A **heap** is a complete binary tree that satisfies the heap property:
 
-- **Max Heap**: Parent node ≥ children
-- **Min Heap**: Parent node ≤ children
+- **Max-heap**: parent node ≥ children
+- **Min-heap**: parent node ≤ children
 
 Heaps are commonly used to implement **priority queues**, where elements with higher priority are processed first.
-
 
 **🔹 Heap Sort**
 
 Heap sort works in two main steps:
 
-  1. Build a heap from input data
-  2. Repeatedly extract the root (maximum element)
+1. Build a heap from the input data  
+2. Repeatedly extract the root (maximum element)
 
 This produces a sorted sequence.
 
+---
 
 ## 🔗 Connection to Task 1
-The heap data structure studied in Task 2 can be applied to the clinic system in Task 1.
+
+The heap data structure studied in Task 2 can be applied to the clinic system in Task 1.  
 For example, the triage system can be improved by using a **priority queue (heap)** to automatically serve patients based on urgency level.
 
 ---
@@ -144,30 +145,32 @@ For example, the triage system can be improved by using a **priority queue (heap
 ## ⚙️ Implemented Features
 
 [`heap.py`](Task_2/heap.py)
-  - `insert(value)` – O(log n)
-  - `extract_max()` – O(log n)
-  - `peek_max()` – O(1)
-  - `is_empty()`
+- `insert(value)` – insert a new element and bubble up to maintain the max-heap property (O(log n))
+- `extract_max()` – remove and return the maximum element and bubble down (O(log n))
+- `peek_max()` – return the maximum element without removal (O(1))
+- `is_empty()` – check if the heap is empty
 
 [`heap_sort.py`](Task_2/heap_sort.py)
-  - Builds a heap
-  - Extracts elements to form sorted output
+- Builds a `MaxHeap` by repeated `insert`
+- Extracts elements to form a sorted output list (ascending order)
 
 [`test_main.py`](Task_2/test_main.py) 
-  - Demonstrates:
-      - Heap operations
-      - Heap sort on different test cases
+- Demonstrates:
+  - Heap operations
+  - Heap sort on different test cases (including empty list, single element, negatives, duplicates)
 
 ---
 
 ## ⏱ Time Complexity
 
-| Operation     | Complexity |
-|---------------|------------|
-| Insert        | O(log n)   |
-| Extract Max   | O(log n)   |
-| Peek          | O(1)       |
-| Heap Sort     | O(n log n) |
+| Operation     | Complexity      |
+|--------------|-----------------|
+| Insert        | \(O(\log n)\)   |
+| Extract Max   | \(O(\log n)\)   |
+| Peek          | \(O(1)\)        |
+| Heap Sort     | \(O(n \log n)\) |
+
+> Note: In this project we build the heap by repeated `insert`, so building the heap itself is \(O(n \log n)\). Using the theoretical bottom-up heap construction algorithm, it can be done in \(O(n)\), but we choose the simpler approach here.
 
 --- 
 
@@ -181,22 +184,24 @@ python test_main.py
 ---
 
 ## ⚠️ Limitations
+
 - The system is a simplified simulation and does not include:
   - Database storage
   - Graphical User Interface (GUI)
 - The triage system is currently rule-based and not dynamically optimised
-- The system is designed for demonstration rather than large-scale deployment
+- The system is designed for demonstration and learning purposes rather than large-scale deployment
 
 ---
 
 ## 🚀 Future Improvements
-- Integrate heap-based priority queue into triage system
-- Add GUI for better user interaction
+
+- Integrate a heap-based priority queue into the triage system
+- Add a GUI for better user interaction
 - Implement persistent storage (file/database)
-- Expand system to include billing or medical records
+- Expand the system to include billing or medical records
 
 ---
 
 ## 📌 Academic Honesty
 
-This project is developed by our group. External resources and AI tools (e.g., ChatGPT) were used for idea refinement, debugging, and report polishing. All code and concepts have been reviewed and understood by the group members in accordance with HKMU academic honesty policies.
+This project is developed by our group. External resources and AI tools (e.g., ChatGPT) were used for idea refinement, debugging, and report polishing. All code and concepts have been reviewed and understood by the group members in accordance with HKMU academic honesty policies and course project requirements.
