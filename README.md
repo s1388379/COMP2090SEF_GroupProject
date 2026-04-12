@@ -124,7 +124,6 @@ A **heap** is a complete binary tree that satisfies the heap property:
 
 Heaps are commonly used to implement **priority queues**, where elements with higher priority are processed first.
 
----
 
 **🔹 Heap Sort**
 
@@ -135,7 +134,6 @@ Heap sort works in two main steps:
 
 This produces a sorted sequence.
 
----
 
 ## 🔗 Connection to Task 1
 The heap data structure studied in Task 2 can be applied to the clinic system in Task 1.
@@ -144,8 +142,6 @@ For example, the triage system can be improved by using a **priority queue (heap
 ---
 
 ## ⚙️ Implemented Features
-
-### Main Python Files
 
 [`heap.py`](Task_2/heap.py)
   - `insert(value)` – O(log n)
