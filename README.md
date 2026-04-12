@@ -31,16 +31,16 @@ The system models the following entities:
   - Auto-generated patient ID
     
 - **Doctors**
-  – Name, specialty
+  - Name, specialty
   - Auto-generated doctor ID
   - Responsible patient list
     
 - **Appointments**
-  – Appointment date
+  - Appointment date
   - Patient ID and Doctor ID  
     
 - **Triage System (UrgentCounter)**
-  – 5-level classification:
+  - 5-level classification:
     - Critical
     - Emergency
     - Urgent
