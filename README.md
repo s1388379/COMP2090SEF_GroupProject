@@ -26,9 +26,9 @@ The current version focuses on demonstrating core OOP concepts (classes, encapsu
 
 ### Main Python Files
 
-- `Task_1/main_program.py`
-- `Task_1/person.py`
-- `Task_1/appointment.py`
+- [`main_program.py`](Task_1/main_program.py)
+- [`person.py`](Task_1/person.py)
+- [`appointment.py`](Task_1/appointment.py)
 
 ### OOP Concepts Demonstrated
 
@@ -69,7 +69,7 @@ We implement the max-heap from scratch using a Python list, then implement heap 
 
 ### Main Python Files
 
-- `Task_2/heap.py`
+- [`heap.py`](Task_2/heap.py)
   - Implements a `MaxHeap` class using a Python list as the underlying storage.
   - Key methods:
     - `insert(value)` – insert a new element and restore the max-heap property
@@ -78,14 +78,14 @@ We implement the max-heap from scratch using a Python list, then implement heap 
     - `__len__()` – number of elements in the heap
     - `is_empty()` – whether the heap is empty
 
-- `Task_2/heap_sort.py`
+- [`heap_sort.py`](Task_2/heap_sort.py)
   - Implements `heap_sort(arr)` using the `MaxHeap` class.
   - Steps:
     1. Insert all elements of `arr` into a `MaxHeap`.
     2. Repeatedly call `extract_max()` to build a descending list.
     3. Reverse the list to get ascending order.
 
-- `Task_2/test_main.py`
+- [`test_main.py`](Task_2/test_main.py) 
   - Simple demonstration script:
     - Creates a `MaxHeap` and inserts several numbers
     - Prints the internal heap array and the current maximum
