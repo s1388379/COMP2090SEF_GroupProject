@@ -109,7 +109,23 @@ For Task 2, we self-study:
 - **Data structure**: Binary **Max-Heap**
 - **Algorithm**: **Heap Sort**
 
-We implement the max-heap from scratch using a Python list, then implement heap sort that builds a heap and repeatedly extracts the maximum to produce a sorted list.
+These topics are not covered in the course and are studied independently to extend our knowledge of data structures and algorithms.
+
+---
+
+## 🧠 Concept Summary
+
+**🔹 Heap**
+
+A **heap** is a complete binary tree that satisfies the heap property:
+
+- **Max Heap**: Parent node ≥ children
+- **Min Heap**: Parent node ≤ children
+
+Heaps are commonly used to implement priority queues, where elements with higher priority are processed first.
+
+
+---
 
 ### Main Python Files
 
@@ -159,6 +175,6 @@ python test_main.py  # run combined tests (if implemented)
 
 ---
 
-## Academic Honesty and AI Usage
+## Academic Honesty
 
-We used online materials and generative AI tools (e.g. ChatGPT) for idea refinement, code review, and report polishing. All core design decisions, code, and testing have been checked and understood by our group. We follow HKMU’s academic honesty requirements and clearly declare any external assistance in the final project reports.
+This project is developed by our group. External resources and AI tools (e.g., ChatGPT) were used for idea refinement, debugging, and report polishing. All code and concepts have been reviewed and understood by the group members in accordance with HKMU academic honesty policies.
