@@ -125,8 +125,6 @@ A **heap** is a complete binary tree that satisfies the heap property:
 Heaps are commonly used to implement **priority queues**, where elements with higher priority are processed first.
 
 
-
-
 **🔹 Heap Sort**
 
 Heap sort works in two main steps:
@@ -151,25 +149,24 @@ For example, the triage system can be improved by using a **priority queue (heap
   - `peek_max()` – O(1)
   - `is_empty()`
 
-- [`heap_sort.py`](Task_2/heap_sort.py)
-  - Implements `heap_sort(arr)` using the `MaxHeap` class.
-  - Steps:
-    1. Insert all elements of `arr` into a `MaxHeap`.
-    2. Repeatedly call `extract_max()` to build a descending list.
-    3. Reverse the list to get ascending order.
+[`heap_sort.py`](Task_2/heap_sort.py)
+  - Builds a heap
+  - Extracts elements to form sorted output
 
-- [`test_main.py`](Task_2/test_main.py) 
-  - Simple demonstration script:
-    - Creates a `MaxHeap` and inserts several numbers
-    - Prints the internal heap array and the current maximum
-    - Calls `heap_sort()` on example lists and prints the sorted results
+[`test_main.py`](Task_2/test_main.py) 
+  - Demonstrates:
+      - Heap operations
+      - Heap sort on different test cases
 
-### Time Complexity (for report and README)
 
-- **Max-heap operations**:
-  - `insert`: \(O(\log n)\) (bubble-up)
-  - `extract_max`: \(O(\log n)\) (bubble-down)
-  - `peek_max`: \(O(1)\)
+## ⏱ Time Complexity
+
+| Operation     | Complexity |
+|---------------|------------|
+| Insert        | O(log n)   |
+| Extract Max   | O(log n)   |
+| Peek          | O(1)       |
+| Heap Sort     | O(n log n) |
 
 - **Heap sort**:
   - In our implementation: building the heap by repeated `insert` is \(O(n \log n)\), and then we do \(n\) extractions at \(O(\log n)\) each, so overall **\(O(n \log n)\)**.
