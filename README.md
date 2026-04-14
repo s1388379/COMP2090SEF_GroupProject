@@ -154,6 +154,15 @@ For example, the triage system can be improved by using a **priority queue (heap
 - Builds a `MaxHeap` by repeated `insert`
 - Extracts elements to form a sorted output list (ascending order)
 
+[`hospital.py`](Task_2/hospital.py)
+- `add_doctor()` -Admitting patients
+- `self.waiting_heap.insert()`- Put the patients into a max-heap
+- `assign_next_patient_to_doctor(self, doctor_id: )` - Assigned to a Doctor
+- `getting_waiting_list_sort()` -Extract the most critical patient
+
+[`main.py`](Task_2/main.py)
+- Register the patient first, then assign them to a doctor
+
 [`test_heap.py`](Task_2/test_heap.py) 
 - Demonstrates:
   - Heap operations
