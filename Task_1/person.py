@@ -53,7 +53,7 @@ class Patient:
 class Doctor:
     NEXT_ID = 1 
     
-    def __init__(self, name: str, specialist: str, doctor_id: str):
+    def __init__(self, name: str, specialist: str, doctor_id: str = None):
         self._name = name
         self._specialist = specialist
         self._doctor_id = f"D{Doctor.NEXT_ID:03d}"
@@ -70,7 +70,7 @@ class Doctor:
 
     @property
     def responsible_patients(self):
-        return list(self._responsible_patients)  # return a copy
+        return list(self._responsible_patients)  
 
     def add_patient(self, patient: "Patient"):
         if patient not in self._responsible_patients:
