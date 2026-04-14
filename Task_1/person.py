@@ -17,14 +17,16 @@ class TriageLevel(Enum):  # Five-tier triage system in public hospitals
 class Patient:
     NEXT_ID = 1
     
-    def __init__(self, name: str, hkid: str, age: int, gender: Gender):
+    def __init__(self, name: str, hkid: str, age: int, gender: Gender, patient_id : str = None):
         self._name = name
         self._hkid = hkid
         self._age = age
         self._gender = gender
-        self._patient_id = f"P{Patient.NEXT_ID:03d}"
-        Patient.NEXT_ID += 1
-
+        if patient_id is None:
+            self._patient_id = f"P{Patient.NEXT_ID:03d}"
+            Patient.NEXT_ID += 1
+        else:
+            self._patient_id = patient_id
     @property
     def patient_id(self):
         return self._patient_id
@@ -51,7 +53,7 @@ class Patient:
 class Doctor:
     NEXT_ID = 1 
     
-    def __init__(self, name: str, specialist: str):
+    def __init__(self, name: str, specialist: str, doctor_id: str):
         self._name = name
         self._specialist = specialist
         self._doctor_id = f"D{Doctor.NEXT_ID:03d}"
