@@ -18,7 +18,7 @@ def main():
     print("\n\nHeap Sort Demo:")
     data = [4, 1, 7, 3, 8, 5]
     print("Original:", data)
-    print("Sorted:", heap_sort(data))
+    print("min-heap:", heap_sort(data))
 
 
 if __name__ == "__main__":
