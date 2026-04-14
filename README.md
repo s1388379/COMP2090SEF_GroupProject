@@ -195,7 +195,6 @@ python test_main.py
 
 ## 🚀 Future Improvements
 
-- Integrate a heap-based priority queue into the triage system
 - Add a GUI for better user interaction
 - Implement persistent storage (file/database)
 - Expand the system to include billing or medical records
