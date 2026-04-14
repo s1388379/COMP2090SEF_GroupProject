@@ -8,6 +8,7 @@ class HospitalSystem:
         self.doctors = {}
 
     def add_doctor(self, name: str, specialist: str):
+        doctor_id = f"D{Doctor.NEXT_ID:03d}"
         doctor = Doctor(name, specialist)
         self.doctors[doctor.doctor_id] = doctor
         return doctor
