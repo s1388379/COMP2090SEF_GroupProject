@@ -154,7 +154,7 @@ For example, the triage system can be improved by using a **priority queue (heap
 - Builds a `MaxHeap` by repeated `insert`
 - Extracts elements to form a sorted output list (ascending order)
 
-[`test_main.py`](Task_2/test_main.py) 
+[`test_heap.py`](Task_2/test_heap.py) 
 - Demonstrates:
   - Heap operations
   - Heap sort on different test cases (including empty list, single element, negatives, duplicates)
