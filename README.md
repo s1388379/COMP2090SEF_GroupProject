@@ -14,6 +14,8 @@
 
 ## 🏥 Task 1 – Hospital Management System
 
+## YouTube link for recording: https://youtu.be/sAIYFXo9yC8
+
 ### 📖 Problem Background
 
 In real-world clinics and hospitals, efficient management of patients, doctors, and appointments is essential to ensure timely treatment. In particular, triage systems are used to prioritise patients based on urgency to reduce waiting time and improve patient outcomes.
@@ -101,6 +103,8 @@ This demo will:
 ---
 
 ## 📊 Task 2 – Heap (Data Structure) & Heap Sort (Algorithm)
+
+## Youtube Link for recording: https://youtu.be/0v1Sk1vPcSE
 
 ### 📖 Overview
 
