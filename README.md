@@ -90,7 +90,7 @@ The current version focuses on demonstrating core OOP concepts (classes, encapsu
 
 ```bash
 cd Task_1
-python update_main_program.py
+python main_program.py
 ```
 
 This demo will:
@@ -141,7 +141,7 @@ This produces a sorted sequence.
 
 ## 🔗 Connection to Task 1
 
-The heap data structure studied in Task 2 can be applied to the clinic system in Task 1.  
+The heap data structure studied in Task 2 can be applied to the hospitial system in Task 1.  
 For example, the triage system can be improved by using a **priority queue (heap)** to automatically serve patients based on urgency level.
 
 ---
@@ -195,7 +195,7 @@ For example, the triage system can be improved by using a **priority queue (heap
 
 ```bash
 cd Task_2
-python test_main.py
+python update_main_program.py
 ```
 
 ---
