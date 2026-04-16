@@ -160,7 +160,11 @@ For example, the triage system can be improved by using a **priority queue (heap
 - `assign_next_patient_to_doctor(self, doctor_id: )` - Assigned to a Doctor
 - `getting_waiting_list_sort()` -Extract the most critical patient
 
-[`main.py`](Task_2/main.py)
+[`person.py`](Task_2/person.py)
+- class Gender, TriageLevel, Patient,Doctor
+- The attributes of doctors and patients have been encapsulated
+
+[`update_main_program.py`](Task_2/update_main_program.py)
 - Register the patient first, then assign them to a doctor
 
 [`test_heap.py`](Task_2/test_heap.py) 
