@@ -1,4 +1,4 @@
-# COMP2090SEF Group Project – Clinic Management System & Heap + Heap Sort
+# COMP2090SEF Group Project – Hospital Management System & Heap + Heap Sort
 
 ## 📌 Group Information
 - **Course**: COMP2090SEF – Data Structures, Algorithms and Problem Solving
