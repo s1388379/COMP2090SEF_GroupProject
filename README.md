@@ -12,7 +12,7 @@
 
 ---
 
-## 🏥 Task 1 – Clinic Management System
+## 🏥 Task 1 – Hospital Management System
 
 ### 📖 Problem Background
 
