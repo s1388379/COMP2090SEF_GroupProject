@@ -88,7 +88,7 @@ The current version focuses on demonstrating core OOP concepts (classes, encapsu
 
 ```bash
 cd Task_1
-python main_program.py
+python update_main_program.py
 ```
 
 This demo will:
